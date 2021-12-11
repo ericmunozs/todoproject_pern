@@ -1,0 +1,31 @@
+### create a todo (POST /todos)
+POST http://localhost:5000/todos/ 
+Content-type: application/json
+
+{
+  "description": "New todo"
+}
+
+### get all todos (GET /todos)
+GET http://localhost:5000/todos/
+
+{}
+
+### get a todo (GET /todos/:id)
+GET http://localhost:5000/todos/9
+
+{}
+
+### update a todo (PUT /todos/:id)
+PUT http://localhost:5000/todos/9
+Content-Type: application/json
+
+{
+  "description": "I need to clean my floor (edited)!"
+}
+
+### delete a todo (DELETE /todos/:id)
+DELETE http://localhost:5000/todos/4
+
+{}
+
